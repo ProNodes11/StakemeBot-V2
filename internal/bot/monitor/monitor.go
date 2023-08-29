@@ -67,7 +67,7 @@ func RunMonitor(cnfg config.Config, dbcon *sql.DB, bot *tgbotapi.BotAPI, logger 
 					message := fmt.Sprintf("Chain: %s\nValAddress: %s\nUptime %d", chain.ChainName,chain.Address, uptime)
 					user.UptimeAlerts[i].SendAlert(bot, message, users.SeriousAlert, user.ChatID, logger)
 					chain.SentAlerts[users.SeriousAlert] = true
-				} else if uptime < 101 {
+				} else if uptime < 90 {
 					message := fmt.Sprintf("Chain: %s\nValAddress: %s\nUptime %d", chain.ChainName,chain.Address, uptime)
 					user.UptimeAlerts[i].SendAlert(bot, message, users.MinorAlert, user.ChatID, logger)
 					chain.SentAlerts[users.MinorAlert] = true
