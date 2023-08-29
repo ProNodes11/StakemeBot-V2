@@ -1,0 +1,74 @@
+app:
+  appLogLevel: debug
+bot:
+  botDebug: false
+  botToken: 6631844283:AAGh8KacIRmyEEFleBdcDPixEH09dFjuY2w
+database:
+  user: admin
+  pass: password
+  host: localhost
+  port: 5432
+chains:
+  - name: Bitsong
+    rpcUrls:
+      - https://rpc-bitsong-ia.cosmosia.notional.ventures
+      - https://rpc.explorebitsong.com
+      - https://bitsong-rpc.validatrium.club
+      - https://rpc.bitsong.chaintools.tech
+    apiUrls:
+      - https://bitsong-api.validatrium.club/
+      - https://api-bitsong.starsquid.io
+      - https://api.bitsong.quokkastake.io
+      - https://rest-bitsong.architectnodes.com
+  - name: Kichain
+    rpcUrls:
+      - https://rpc-mainnet.blockchain.ki
+      - https://kichain-rpc.polkachu.com
+      - https://rpc-kichain-ia.cosmosia.notional.ventures
+      - https://kichain-rpc.panthea.eu
+    apiUrls:
+      - https://api-mainnet.blockchain.ki
+  - name: Bitcanna
+    rpcUrls:
+      - https://rpc.bitcanna.io
+      - http://bcna.paranorm.pro
+      - https://rpc-bcna.kjinc.io
+      - https://mainnet-bitcanna-rpc.konsortech.xyz
+    apiUrls:
+      - https://lcd.bitcanna.io
+  - name: Crescent
+    rpcUrls:
+      - https://crescent.rpc.stakin-nodes.com
+      - https://rpc-crescent-01.stakeflow.io
+      - https://crescent-rpc.polkachu.com
+      - https://rpc-crescent-01.stakeflow.io
+    apiUrls:
+      - https://api-crescent.pupmos.network
+  - name: Umee
+    rpcUrls:
+      - https://rpc-umee.cosmos-spaces.cloud
+      - https://umee-rpc.quantnode.tech
+      - https://umee-rpc.tienthuattoan.ventures
+      - https://rpc-umee-01.stakeflow.io
+    apiUrls:
+      - https://api-umee-ia.cosmosia.notional.ventures/
+  - name: Persistence
+    rpcUrls:
+      - https://rpc.core.persistence.one
+      - https://persistence-rpc.polkachu.com
+      - https://persistence-rpc.kleomedes.network
+      - https://persistence-rpc.quantnode.tech
+    apiUrls:
+      - https://rest.core.persistence.one
+  - name: Kyve
+    rpcUrls:
+      - https://rpc-kyve.ecostake.com
+      - https://rpc-kyve.imperator.co
+      - https://kyve-rpc.ibs.team
+      - https://kyve.rpc.liveraven.net
+    apiUrls:
+      - https://rest-kyve.ecostake.com
+  - name: Okp4
+    rpcUrls:
+      - ws://195.201.194.249:26657/
+      - https://eth-rpc.yourdomain.com
