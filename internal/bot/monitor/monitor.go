@@ -72,8 +72,8 @@ func RunMonitor(cnfg config.Config, dbcon *sql.DB, bot *tgbotapi.BotAPI, logger 
 					user.UptimeAlerts[i].SendAlert(bot, message, users.MinorAlert, user.ChatID, logger)
 					chain.SentAlerts[users.MinorAlert] = true
 				} else {
-					message := fmt.Sprintf("Validator uptime returned to normal state\nChain: %s\nUptime %d", chain.ChainName, uptime)
-					user.UptimeAlerts[i].SendAlert(bot, message, users.MinorAlert, user.ChatID, logger)
+					// message := fmt.Sprintf("Validator uptime returned to normal state\nChain: %s\nUptime %d", chain.ChainName, uptime)
+					// user.UptimeAlerts[i].SendAlert(bot, message, users.MinorAlert, user.ChatID, logger)
 					chain.ResetSentAlerts()
 				}
 				db.UpdateUser(dbcon, &user, logger)

@@ -1,0 +1,20 @@
+# .gitlab-ci.yml
+stages:
+  - build
+  - deploy
+  
+build:
+  stage: build
+  tags:
+    - sei
+  script:
+    - docker compose build
+
+deploy:
+  stage: deploy
+  tags:
+    - sei
+  script:
+    - docker compose down
+    - docker comsope up -d
+

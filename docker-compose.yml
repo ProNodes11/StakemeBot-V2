@@ -10,3 +10,20 @@ services:
       - DATABASE_HOST=localhost
     ports:
       - '5432:5432'
+    networks:
+      - bridge
+
+  tgbot:
+    container_name: golang_container
+    tty: true
+    build: .
+    restart: on-failure
+    depends_on:
+      - postgresdb
+    networks:
+      - bridge
+
+
+
+networks:
+  bridge:

@@ -6,7 +6,7 @@ bot:
 database:
   user: admin
   pass: password
-  host: localhost
+  host: postgresdb
   port: 5432
 chains:
   - name: Bitsong
@@ -72,3 +72,8 @@ chains:
     rpcUrls:
       - ws://195.201.194.249:26657/
       - https://eth-rpc.yourdomain.com
+  - name: Bostrom
+    rpcUrls:
+      - https://rpc.bostrom.cybernode.ai:443
+    apiUrls:
+      - https://lcd.bostrom.cybernode.ai
