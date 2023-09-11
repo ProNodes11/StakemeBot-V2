@@ -48,7 +48,7 @@ func ProjectsMenuKeyboard(projects config.Config) tgbotapi.InlineKeyboardMarkup 
 
 func BuyMenuKeyboard(projectName string) tgbotapi.InlineKeyboardMarkup {
 	buttons := []tgbotapi.InlineKeyboardButton{
-		tgbotapi.NewInlineKeyboardButtonData("Добавить в корзину🗑", "buy_"+projectName),
+		tgbotapi.NewInlineKeyboardButtonData("Добавить в корзину 🛒", "buy_"+projectName),
 		tgbotapi.NewInlineKeyboardButtonData("Назад↩️", "return"),
 	}
 
